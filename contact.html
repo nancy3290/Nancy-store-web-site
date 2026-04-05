@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Nancy Store</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nancy <span>Store</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html"            class="nav-link" data-fr="Accueil"     data-en="Home">Accueil</a>
+      <a href="index.html#collections" class="nav-link" data-fr="Collections" data-en="Collections">Collections</a>
+      <a href="contact.html"          class="nav-link active" data-fr="Contact" data-en="Contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">☽</span>
+      </button>
+      <a href="signup.html" class="btn-header" data-fr="S'inscrire" data-en="Sign Up">S'inscrire</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Contact Hero -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="container">
+    <p class="section-label" data-fr="Contactez-nous" data-en="Get in Touch">Contactez-nous</p>
+    <h1 class="page-hero-title">
+      <span data-fr="Nous serions ravis" data-en="We'd Love">Nous serions ravis</span><br/>
+      <em data-fr="de vous entendre" data-en="to Hear from You">de vous entendre</em>
+    </h1>
+    <p class="page-hero-sub"
+       data-fr="Que ce soit pour une commande, un conseil style ou simplement bonjour — notre équipe est là pour vous."
+       data-en="Whether it's a question about an order, a styling tip, or just a hello — our team is here for you.">
+      Que ce soit pour une commande, un conseil style ou simplement bonjour — notre équipe est là pour vous.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Body -->
+<section class="contact-section">
+  <div class="container contact-grid">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h2 class="contact-info-title" data-fr="Nous joindre" data-en="Reach Us">Nous joindre</h2>
+
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4 data-fr="Adresse" data-en="Address">Adresse</h4>
+          <p>12 Rue de la Mode, Abidjan<br/>Côte d'Ivoire</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4 data-fr="E-mail" data-en="Email">E-mail</h4>
+          <p>hello@nancystore.com<br/>support@nancystore.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4 data-fr="Téléphone" data-en="Phone">Téléphone</h4>
+          <p>+225 07 00 00 00<br/>
+            <span data-fr="Lun–Sam, 9h–18h" data-en="Mon–Sat, 9am–6pm">Lun–Sam, 9h–18h</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="info-social">
+        <p data-fr="Suivez-nous" data-en="Follow us">Suivez-nous</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="TikTok">TK</a>
+          <a href="#" class="social-link" aria-label="Pinterest">PT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form-wrap">
+      <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="c-name" data-fr="Prénom" data-en="First Name">Prénom</label>
+            <input class="form-input" id="c-name" type="text"
+                   data-placeholder-fr="Jean"
+                   data-placeholder-en="Jane"
+                   placeholder="Jean" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-lname" data-fr="Nom" data-en="Last Name">Nom</label>
+            <input class="form-input" id="c-lname" type="text"
+                   data-placeholder-fr="Dupont"
+                   data-placeholder-en="Doe"
+                   placeholder="Dupont"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="c-email" data-fr="Adresse e-mail" data-en="Email Address">Adresse e-mail</label>
+          <input class="form-input" id="c-email" type="email"
+                 data-placeholder-fr="jean@email.com"
+                 data-placeholder-en="jane@email.com"
+                 placeholder="jean@email.com" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="c-subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+          <select class="form-input form-select" id="c-subject">
+            <option value="" data-fr="Choisir un sujet…"          data-en="Select a subject…">Choisir un sujet…</option>
+            <option         data-fr="Question sur une commande"   data-en="Order Inquiry">Question sur une commande</option>
+            <option         data-fr="Retours &amp; échanges"      data-en="Returns &amp; Exchanges">Retours &amp; échanges</option>
+            <option         data-fr="Question produit"            data-en="Product Question">Question produit</option>
+            <option         data-fr="Partenariat / Grossiste"     data-en="Wholesale / Partnership">Partenariat / Grossiste</option>
+            <option         data-fr="Autre"                       data-en="Other">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="c-message" data-fr="Votre message" data-en="Your Message">Votre message</label>
+          <textarea class="form-input form-textarea" id="c-message" rows="5"
+                    data-placeholder-fr="Comment pouvons-nous vous aider ?"
+                    data-placeholder-en="Tell us how we can help…"
+                    placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full"
+                data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</button>
+        <p class="form-note"
+           data-fr="Nous répondons généralement sous 24 heures."
+           data-en="We typically respond within 24 hours.">Nous répondons généralement sous 24 heures.</p>
+      </form>
+
+      <div class="form-success" id="formSuccess" style="display:none">
+        <div class="success-icon">✓</div>
+        <h3 data-fr="Message envoyé !" data-en="Message Sent!">Message envoyé !</h3>
+        <p  data-fr="Merci de nous avoir contactés. Nous vous répondrons très bientôt."
+            data-en="Thank you for reaching out. We'll be in touch shortly.">
+          Merci de nous avoir contactés. Nous vous répondrons très bientôt.
+        </p>
+        <button class="btn-primary" onclick="resetForm()"
+                data-fr="Envoyer un autre message" data-en="Send Another">Envoyer un autre message</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Nancy <span>Store</span></a>
+      <p data-fr="Là où le style rencontre l'intention." data-en="Where style meets intention.">Là où le style rencontre l'intention.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="social-link" aria-label="Pinterest">PT</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Boutique"    data-en="Shop">Boutique</h4>
+      <a href="#" data-fr="Sacs à main"     data-en="Handbags">Sacs à main</a>
+      <a href="#" data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</a>
+      <a href="#" data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Entreprise" data-en="Company">Entreprise</h4>
+      <a href="index.html"   data-fr="Accueil"    data-en="Home">Accueil</a>
+      <a href="contact.html" data-fr="Contact"    data-en="Contact">Contact</a>
+      <a href="signup.html"  data-fr="S'inscrire" data-en="Sign Up">S'inscrire</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Assistance" data-en="Support">Assistance</h4>
+      <a href="#" data-fr="Guide des tailles" data-en="Size Guide">Guide des tailles</a>
+      <a href="#" data-fr="Retours"           data-en="Returns">Retours</a>
+      <a href="#" data-fr="FAQ"               data-en="FAQ">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-fr="© 2025 Nancy Store. Tous droits réservés."                   data-en="© 2025 Nancy Store. All rights reserved.">© 2025 Nancy Store. Tous droits réservés.</p>
+    <p data-fr="Politique de confidentialité · Conditions d'utilisation" data-en="Privacy Policy · Terms of Use">Politique de confidentialité · Conditions d'utilisation</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

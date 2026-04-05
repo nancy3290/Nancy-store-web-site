@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nancy Store — L'élégance Réinventée</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nancy <span>Store</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html"    class="nav-link active" data-fr="Accueil"     data-en="Home">Accueil</a>
+      <a href="products.html" class="nav-link"        data-fr="Produits"    data-en="Products">Produits</a>
+      <a href="#collections"  class="nav-link"        data-fr="Collections" data-en="Collections">Collections</a>
+      <a href="#about"        class="nav-link"        data-fr="À propos"    data-en="About">À propos</a>
+      <a href="contact.html"  class="nav-link"        data-fr="Contact"     data-en="Contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">☽</span>
+      </button>
+      <a href="signup.html" class="btn-header" data-fr="S'inscrire" data-en="Sign Up">S'inscrire</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-fr="Nouvelle Collection 2025" data-en="New Collection 2025">Nouvelle Collection 2025</p>
+    <h1 class="hero-title">
+      <span data-fr="L'élégance" data-en="Elegance">L'élégance</span><br/>
+      <em data-fr="Réinventée" data-en="Redefined">Réinventée</em>
+    </h1>
+    <p class="hero-subtitle"
+       data-fr="Sacs à main &amp; sandales artisanaux pour celles et ceux qui se déplacent avec intention. L'artisanat rencontre la féminité moderne."
+       data-en="Curated handbags &amp; sandals for those who move with intention. Where craftsmanship meets modern femininity.">
+      Sacs à main &amp; sandales artisanaux pour celles et ceux qui se déplacent avec intention. L'artisanat rencontre la féminité moderne.
+    </p>
+    <div class="hero-cta">
+      <a href="#collections" class="btn-primary" data-fr="Découvrir la Collection" data-en="Discover Collection">Découvrir la Collection</a>
+      <a href="signup.html"  class="btn-ghost"   data-fr="Rejoindre le Club"       data-en="Join the Club">Rejoindre le Club</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span data-fr="Défiler" data-en="Scroll">Défiler</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span data-fr="Sacs à main"     data-en="Handbags">Sacs à main</span><span class="dot">·</span>
+    <span data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</span><span class="dot">·</span>
+    <span data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</span><span class="dot">·</span>
+    <span data-fr="Nouveautés"      data-en="New Arrivals">Nouveautés</span><span class="dot">·</span>
+    <span data-fr="Sacs à main"     data-en="Handbags">Sacs à main</span><span class="dot">·</span>
+    <span data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</span><span class="dot">·</span>
+    <span data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</span><span class="dot">·</span>
+    <span data-fr="Nouveautés"      data-en="New Arrivals">Nouveautés</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- ══════════════ COLLECTIONS ══════════════ -->
+<section class="collections" id="collections">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label" data-fr="Nos Collections" data-en="Our Collections">Nos Collections</p>
+      <h2 class="section-title" data-fr="Créés pour chaque occasion" data-en="Crafted for Every Occasion">Créés pour chaque occasion</h2>
+    </div>
+
+    <div class="collection-grid">
+
+      <!-- Handbags -->
+      <article class="collection-card card-large">
+        <div class="card-image">
+          <div class="card-placeholder handbags-bg">
+            <div class="placeholder-icon">👜</div>
+          </div>
+          <div class="card-overlay">
+            <span class="card-badge" data-fr="Meilleure vente" data-en="Best Seller">Meilleure vente</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category" data-fr="Collection" data-en="Collection">Collection</p>
+          <h3 class="card-title"   data-fr="Sacs à main"  data-en="Handbags">Sacs à main</h3>
+          <p class="card-desc"
+             data-fr="Des totes structurés aux pochettes souples — chaque pièce raconte une histoire d'artisanat raffiné."
+             data-en="From structured totes to supple clutches — every piece tells a story of refined craft.">
+            Des totes structurés aux pochettes souples — chaque pièce raconte une histoire d'artisanat raffiné.
+          </p>
+          <div class="card-footer">
+            <span class="card-price" data-fr="À partir de 89 $" data-en="From $89">À partir de 18000FCFA</span>
+            <a href="products.html?cat=sacs" class="btn-card" data-fr="Voir →" data-en="Shop Now →">Voir →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Women's Sandals -->
+      <article class="collection-card card-medium">
+        <div class="card-image">
+          <div class="card-placeholder sandals-women-bg">
+            <div class="placeholder-icon">👡</div>
+          </div>
+          <div class="card-overlay">
+            <span class="card-badge" data-fr="Nouveau" data-en="New In">Nouveau</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category" data-fr="Femmes" data-en="Women">Femmes</p>
+          <h3 class="card-title"   data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</h3>
+          <p class="card-desc"
+             data-fr="Des silhouettes épurées pensées pour vous emmener du brunch à la soirée."
+             data-en="Elevated silhouettes designed to carry you from brunch to evening.">
+            Des silhouettes épurées pensées pour vous emmener du brunch à la soirée.
+          </p>
+          <div class="card-footer">
+            <span class="card-price" data-fr="À partir de 15000FCFA" data-en="From $65">À partir de 15000FCFA</span>
+            <a href="products.html?cat=sandales-femmes" class="btn-card" data-fr="Voir →" data-en="Shop Now →">Voir →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Men's Sandals -->
+      <article class="collection-card card-medium">
+        <div class="card-image">
+          <div class="card-placeholder sandals-men-bg">
+            <div class="placeholder-icon">👟</div>
+          </div>
+          <div class="card-overlay">
+            <span class="card-badge" data-fr="Tendance" data-en="Trending">Tendance</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category" data-fr="Hommes" data-en="Men">Hommes</p>
+          <h3 class="card-title"   data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</h3>
+          <p class="card-desc"
+             data-fr="Audacieux mais minimalistes — des sandales confortables pensées pour l'homme moderne."
+             data-en="Bold yet minimal — comfort-first sandals built for the modern man.">
+            Audacieux mais minimalistes — des sandales confortables pensées pour l'homme moderne.
+          </p>
+          <div class="card-footer">
+            <span class="card-price" data-fr="À partir de 27000FCFA" data-en="From $72">À partir de 27000FCFA</span>
+            <a href="products.html?cat=sandales-hommes" class="btn-card" data-fr="Voir →" data-en="Shop Now →">Voir →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT STRIP ══════════════ -->
+<section class="about-strip" id="about">
+  <div class="container about-inner">
+    <div class="about-text">
+      <p class="section-label" data-fr="Notre Histoire" data-en="Our Story">Notre Histoire</p>
+      <h2 class="section-title">
+        <span data-fr="Né d'un amour"    data-en="Born from a Love">Né d'un amour</span><br/>
+        <em  data-fr="des belles choses" data-en="of Beautiful Things">des belles choses</em>
+      </h2>
+      <p class="about-para"
+         data-fr="Nancy Store a été fondé sur une conviction simple : chaque femme et chaque homme mérite des accessoires magnifiquement conçus, sans compromis. Nous collaborons avec des ateliers artisanaux et vous proposons des pièces qui vieillissent avec grâce."
+         data-en="Nancy Store was founded on a simple belief: every woman and man deserves access to beautifully crafted accessories without compromise. We source from artisan workshops and bring you pieces that age with grace.">
+        Nancy Store a été fondé sur une conviction simple : chaque femme et chaque homme mérite des accessoires magnifiquement conçus, sans compromis. Nous collaborons avec des ateliers artisanaux et vous proposons des pièces qui vieillissent avec grâce.
+      </p>
+      <a href="contact.html" class="btn-primary" data-fr="Nous contacter" data-en="Get in Touch">Nous contacter</a>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-number">2 400+</span>
+        <span class="stat-label" data-fr="Clients satisfaits"   data-en="Happy Clients">Clients satisfaits</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label" data-fr="Collections soignées" data-en="Curated Collections">Collections soignées</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label" data-fr="Qualité supérieure"       data-en="Superior Quality">Qualité supérieure</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">48h</span>
+        <span class="stat-label" data-fr="Livraison express"    data-en="Express Delivery">Livraison express</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NEWSLETTER ══════════════ -->
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div class="newsletter-text">
+      <h2 data-fr="Restez informé" data-en="Stay in the Loop">Restez informé</h2>
+      <p  data-fr="Nouveautés, offres exclusives, conseils style — directement dans votre boîte mail."
+          data-en="New drops, exclusive offers, and style notes — delivered to your inbox.">
+        Nouveautés, offres exclusives, conseils style — directement dans votre boîte mail.
+      </p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+      <input type="email"
+             class="newsletter-input"
+             aria-label="Email"
+             data-placeholder-fr="votre@email.com"
+             data-placeholder-en="your@email.com"
+             placeholder="votre@email.com"/>
+      <button type="submit" class="btn-primary" data-fr="S'abonner" data-en="Subscribe">S'abonner</button>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Nancy <span>Store</span></a>
+      <p data-fr="Là où le style rencontre l'intention." data-en="Where style meets intention.">Là où le style rencontre l'intention.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="social-link" aria-label="Pinterest">PT</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Boutique"    data-en="Shop">Boutique</h4>
+      <a href="#" data-fr="Sacs à main"     data-en="Handbags">Sacs à main</a>
+      <a href="#" data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</a>
+      <a href="#" data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</a>
+      <a href="#" data-fr="Nouveautés"      data-en="New Arrivals">Nouveautés</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Entreprise" data-en="Company">Entreprise</h4>
+      <a href="#"            data-fr="À propos"  data-en="About Us">À propos</a>
+      <a href="contact.html" data-fr="Contact"   data-en="Contact">Contact</a>
+      <a href="#"            data-fr="Carrières" data-en="Careers">Carrières</a>
+      <a href="#"            data-fr="Presse"    data-en="Press">Presse</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Assistance" data-en="Support">Assistance</h4>
+      <a href="#" data-fr="Guide des tailles" data-en="Size Guide">Guide des tailles</a>
+      <a href="#" data-fr="Retours"           data-en="Returns">Retours</a>
+      <a href="#" data-fr="Livraison"         data-en="Shipping">Livraison</a>
+      <a href="#" data-fr="FAQ"               data-en="FAQ">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-fr="© 2025 Nancy Store. Tous droits réservés."  data-en="© 2025 Nancy Store. All rights reserved.">© 2025 Nancy Store. Tous droits réservés.</p>
+    <p data-fr="Politique de confidentialité · Conditions d'utilisation" data-en="Privacy Policy · Terms of Use">Politique de confidentialité · Conditions d'utilisation</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-fr="Produits — Nancy Store" data-en="Products — Nancy Store">Produits — Nancy Store</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="products.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nancy <span>Store</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html"   class="nav-link" data-fr="Accueil"    data-en="Home">Accueil</a>
+      <a href="products.html" class="nav-link active" data-fr="Produits" data-en="Products">Produits</a>
+      <a href="contact.html" class="nav-link" data-fr="Contact"    data-en="Contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">☽</span>
+      </button>
+      <a href="signup.html" class="btn-header" data-fr="S'inscrire" data-en="Sign Up">S'inscrire</a>
+      <!-- Cart icon -->
+      <a href="#cart-drawer" class="cart-icon-btn" id="cartIconBtn" aria-label="Panier">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ PAGE HERO ══════════════ -->
+<section class="shop-hero">
+  <div class="shop-hero-bg"></div>
+  <div class="container shop-hero-inner">
+    <p class="section-label" data-fr="Boutique" data-en="Shop">Boutique</p>
+    <h1 class="shop-hero-title" data-fr="Toute la Collection" data-en="Full Collection">Toute la Collection</h1>
+    <p class="shop-hero-sub" data-fr="Sacs à main, sandales femmes &amp; hommes — l'élégance pour tous." data-en="Handbags, women's &amp; men's sandals — elegance for everyone.">Sacs à main, sandales femmes &amp; hommes — l'élégance pour tous.</p>
+  </div>
+</section>
+
+<!-- ══════════════ TOOLBAR ══════════════ -->
+<div class="shop-toolbar">
+  <div class="container toolbar-inner">
+
+    <!-- Category filters -->
+    <div class="filter-tabs" role="tablist">
+      <button class="filter-tab active" data-cat="all"            data-fr="Tous"            data-en="All">Tous</button>
+      <button class="filter-tab"        data-cat="sacs"           data-fr="Sacs à main"     data-en="Handbags">Sacs à main</button>
+      <button class="filter-tab"        data-cat="sandales-femmes" data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</button>
+      <button class="filter-tab"        data-cat="sandales-hommes" data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</button>
+    </div>
+
+    <div class="toolbar-right">
+      <!-- Sort -->
+      <div class="sort-wrap">
+        <label class="sort-label" data-fr="Trier :" data-en="Sort:">Trier :</label>
+        <select class="sort-select" id="sortSelect">
+          <option value="default" data-fr="Par défaut"       data-en="Default">Par défaut</option>
+          <option value="asc"     data-fr="Prix croissant"   data-en="Price: Low to High">Prix croissant</option>
+          <option value="desc"    data-fr="Prix décroissant" data-en="Price: High to Low">Prix décroissant</option>
+        </select>
+      </div>
+
+      <!-- View toggle -->
+      <div class="view-toggle" role="group" aria-label="View">
+        <button class="view-btn active" id="btnGrid" aria-label="Grille" title="Vue grille">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="7" height="7" rx="1"/><rect x="9" y="0" width="7" height="7" rx="1"/><rect x="0" y="9" width="7" height="7" rx="1"/><rect x="9" y="9" width="7" height="7" rx="1"/></svg>
+        </button>
+        <button class="view-btn" id="btnList" aria-label="Liste" title="Vue liste">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="16" height="4" rx="1"/><rect x="0" y="6" width="16" height="4" rx="1"/><rect x="0" y="12" width="16" height="4" rx="1"/></svg>
+        </button>
+      </div>
+
+      <!-- Count -->
+      <span class="product-count" id="productCount"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ PRODUCT GRID ══════════════ -->
+<main class="container shop-main">
+  <div class="products-grid grid-view" id="productsGrid">
+    <!-- Injected by JS -->
+  </div>
+  <p class="no-results" id="noResults" style="display:none" data-fr="Aucun produit trouvé." data-en="No products found.">Aucun produit trouvé.</p>
+</main>
+
+<!-- ══════════════ CART DRAWER ══════════════ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-header">
+    <h3 data-fr="Votre Panier" data-en="Your Cart">Votre Panier</h3>
+    <button class="cart-close" id="cartClose" aria-label="Fermer">✕</button>
+  </div>
+  <div class="cart-drawer-items" id="cartDrawerItems">
+    <!-- Injected by JS -->
+  </div>
+  <div class="cart-drawer-footer" id="cartDrawerFooter">
+    <div class="cart-total-row">
+      <span data-fr="Total" data-en="Total">Total</span>
+      <span class="cart-total-amount" id="cartTotalAmount">0 FCFA</span>
+    </div>
+    <a href="signup.html" class="btn-primary btn-full" data-fr="Passer la commande" data-en="Checkout">Passer la commande</a>
+    <button class="btn-ghost btn-full cart-clear-btn" id="cartClearBtn" data-fr="Vider le panier" data-en="Clear Cart">Vider le panier</button>
+  </div>
+</aside>
+
+<!-- ══════════════ TOAST ══════════════ -->
+<div class="ns-toast" id="nsToast"></div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Nancy <span>Store</span></a>
+      <p data-fr="Là où le style rencontre l'intention." data-en="Where style meets intention.">Là où le style rencontre l'intention.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="social-link" aria-label="Pinterest">PT</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Boutique" data-en="Shop">Boutique</h4>
+      <a href="#" data-fr="Sacs à main"     data-en="Handbags">Sacs à main</a>
+      <a href="#" data-fr="Sandales Femmes" data-en="Women's Sandals">Sandales Femmes</a>
+      <a href="#" data-fr="Sandales Hommes" data-en="Men's Sandals">Sandales Hommes</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+      <a href="index.html"   data-fr="Accueil"    data-en="Home">Accueil</a>
+      <a href="contact.html" data-fr="Contact"    data-en="Contact">Contact</a>
+      <a href="signup.html"  data-fr="S'inscrire" data-en="Sign Up">S'inscrire</a>
+    </div>
+    <div class="footer-nav">
+      <h4 data-fr="Assistance" data-en="Support">Assistance</h4>
+      <a href="#" data-fr="Guide des tailles" data-en="Size Guide">Guide des tailles</a>
+      <a href="#" data-fr="Retours"           data-en="Returns">Retours</a>
+      <a href="#" data-fr="FAQ"               data-en="FAQ">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-fr="© 2025 Nancy Store. Tous droits réservés." data-en="© 2025 Nancy Store. All rights reserved.">© 2025 Nancy Store. Tous droits réservés.</p>
+    <p data-fr="Politique de confidentialité · Conditions d'utilisation" data-en="Privacy Policy · Terms of Use">Politique de confidentialité · Conditions d'utilisation</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="shop.js"></script>
+
+</body>
+</html>
