@@ -196,8 +196,7 @@ const NS_PRODUCTS = [
   {
     id: 19,
     cat: 'sandales-hommes',
-    img: 'images/sandale 
-       homme4.JPG',
+    img: 'images/sandale-homme4.JPG',
     badge: 'new',
     price: 27000,
     name: { fr: 'Sandale Tressée Croisée Noire', en: 'Black Woven Cross Sandal' },
