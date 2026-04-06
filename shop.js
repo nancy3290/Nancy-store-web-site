@@ -114,7 +114,7 @@ const NS_PRODUCTS = [
   {
     id: 11,
     cat: 'sandales-femmes',
-    img: 'images/Sandalelv1.JPG',
+    img: 'images/sandale-lv1.JPG',
     badge: 'bestseller',
     price: 20000,
     name: { fr: 'Bom Dia Monogram Marron', en: 'Bom Dia Brown Monogram' },
@@ -124,7 +124,7 @@ const NS_PRODUCTS = [
   {
     id: 12,
     cat: 'sandales-femmes',
-    img: 'images/SandaleLV2.JPG',
+    img: 'images/sandalelv2.JPG',
     badge: 'new',
     price: 20000,
     name: { fr: 'Bom Dia Monogram Rose Fuchsia', en: 'Bom Dia Monogram Hot Pink' },
@@ -186,7 +186,7 @@ const NS_PRODUCTS = [
   {
     id: 18,
     cat: 'sandales-hommes',
-    img: 'images/sandale-homme3.JPG',
+    img: 'images/Sandale-homme3.JPG',
     badge: '',
     price: 27000,
     name: { fr: 'Slide Croisé Zara Cuir', en: 'Zara Leather Cross Slide' },
@@ -196,7 +196,7 @@ const NS_PRODUCTS = [
   {
     id: 19,
     cat: 'sandales-hommes',
-    img: 'images/sandale-homme4.JPG',
+    img: 'images/sandale homme4.JPG',
     badge: 'new',
     price: 27000,
     name: { fr: 'Sandale Tressée Croisée Noire', en: 'Black Woven Cross Sandal' },
