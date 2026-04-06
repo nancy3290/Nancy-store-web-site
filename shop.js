@@ -12,7 +12,7 @@ const NS_PRODUCTS = [
   {
     id: 1,
     cat: 'sacs',
-    img: 'images/lvcouleur1.JPG',
+    img: 'images/Lvcouleur2.JPG',
     badge: 'bestseller',
     price: 18000,
     name: { fr: 'Mini Bag Monogram Blanc', en: 'White Monogram Mini Bag' },
@@ -22,7 +22,7 @@ const NS_PRODUCTS = [
   {
     id: 2,
     cat: 'sacs',
-    img: 'images/Lvcouleur2.JPG',
+    img: 'images/lvcouleur1.JPG',
     badge: 'new',
     price: 18000,
     name: { fr: 'Alma BB Damier Chocolat', en: 'Alma BB Damier Chocolate' },
@@ -124,7 +124,7 @@ const NS_PRODUCTS = [
   {
     id: 12,
     cat: 'sandales-femmes',
-    img: 'images/sandalelv2.JPG',
+    img: 'images/SandaleLV3.JPG',
     badge: 'new',
     price: 20000,
     name: { fr: 'Bom Dia Monogram Rose Fuchsia', en: 'Bom Dia Monogram Hot Pink' },
@@ -134,7 +134,7 @@ const NS_PRODUCTS = [
   {
     id: 13,
     cat: 'sandales-femmes',
-    img: 'images/SandaleLV3.JPG',
+    img: 'images/Sandalelv2.JPG',
     badge: '',
     price: 21000,
     name: { fr: 'Bom Dia Monogram Denim Bleu', en: 'Bom Dia Denim Blue Monogram' },
